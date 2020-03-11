@@ -10,7 +10,7 @@ app.get('/v1/app-name', (req, res) => {
     console.log("Sample-node-app");
     res.send('Sample-node-app');
 });
-app.get('/v1/health', (req, res) => {
+app.get('/health', (req, res) => {
     res.send('I am healthy, thanks!')
 });
 
