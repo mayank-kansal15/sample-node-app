@@ -9,9 +9,9 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 app.get('/v1/app-name', (req, res) => {
-    console.log("Sample-node-app");
-    fs.appendFileSync(logFilePath, "Sample-node-app\n");
-    res.send('Sample-node-app');
+    console.log("Sample-node-app-modified");
+    fs.appendFileSync(logFilePath, "Sample-node-app-modified\n");
+    res.send('Sample-node-app-modified');
 });
 app.get('/v1/generate-error-log', (req, res) => {
   console.log("generate error log");
